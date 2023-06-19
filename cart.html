@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/main_website.css">
+    <link rel="stylesheet" href="css/section.css">
+<link rel="stylesheet" href="css/dropdown.css">
+<link rel="stylesheet" href="css/sign-in&other.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#navbar-parent").load("navbar.html");
+  });
+
+  $(document).ready(function() {
+    $("#advertisement").load("adds.html");
+  });
+</script>
+  <style>
+
+    .navbar{
+      position: sticky;
+      top: 0.1px;
+    }
+    .box-shop{
+      width: 800px;
+      height: auto;
+      padding: 10px;
+      
+      margin-top: 10px;
+      background-color: white;
+    }
+    h1 {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .cart-item {
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      border:2px solid black;
+      width: 600px;
+      margin-bottom: 20px;
+    }
+  
+    .cart-item img {
+      width: 120px;
+      margin-right: 10px;
+    }
+
+    .remove-button {
+      margin-left: 10px;
+      padding: 5px 10px;
+      background-color: #ff0000;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .checkout-button {
+    position: relative;
+    left: 320px;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: orange;
+      color: black;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar" id="navbar-parent"></div>
+  <div class="ads" id="advertisement"></div>
+  <div class="box-shop">
+  <h1>Shopping Cart </h1>
+  <hr>    
+
+  <div id="cart-items"></div>
+
+  <button class="checkout-button" onclick="checkout()">Proceed to buy</button>
+</div>
+
+  <script>
+    function displayCartItems() {
+      var cartItemsDiv = document.getElementById("cart-items");
+      var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+      if (cartItems.length === 0) {
+        cartItemsDiv.innerHTML = "<p>Your cart is empty.</p>";
+      } else {
+        var cartHTML = "";
+        for (var i = 0; i < cartItems.length; i++) {
+          var item = cartItems[i];
+          cartHTML += "<div class='cart-item'>" +
+            "<img src='" + item.imageUrl + "' alt='" + item.name + "'>" +
+            "<p>" + item.name + "</p>" +
+            "<p>Rs." + item.price.toFixed(2) + "</p>" +
+            "<button class='remove-button' onclick='removeFromCart(" + i + ")'>Remove</button>" +
+            "</div>";
+        }
+
+        cartItemsDiv.innerHTML = cartHTML;
+      }
+    }
+
+    function removeFromCart(index) {
+      var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+      cartItems.splice(index, 1);
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+alert(`This item will be removed from the Cart`);
+      displayCartItems();
+    }
+
+    function checkout() {
+      // right now i am not using any functional logic
+
+      // yeh jb checkout pr click krenge it will redirect us to the following page
+      window.location.href = "form_payment.html";
+    }
+
+    displayCartItems();
+
+    // Listen for changes in localStorage
+    window.addEventListener('storage', function (event) {
+      if (event.key === 'cartItems') {
+        displayCartItems();
+      }
+    });
+  </script>
+</body>
+</html>

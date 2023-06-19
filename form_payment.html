@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form -once again</title>
+    <link rel="stylesheet" href="css/form_payment.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#navbar-parent").load("navbar.html");
+  });
+
+  $(document).ready(function() {
+    $("#advertisement").load("adds.html");
+  });
+</script>
+
+<style>
+    .navbar {
+        position: sticky;
+        top: 0.1px;
+    }
+</style>
+</head>
+<body>
+    <div class="navbar" id="navbar-parent"></div><br>
+    <div class="payment-form">
+        <form action="" method="get">
+        <h1 class="Heading">Proceed to payment </h1> <hr>
+        <p>
+            Pincode<sup>*</sup>
+            <input type="number" name="pincode" id="pincode" required placeholder="e.g.-111000">
+        </p>
+        <p><label for="address"><sup>*</sup>Address: </label>
+            <input type="text" name="address" id="address" required placeholder="Enter your address here"></p>
+        <hr>
+        <p>Payment Information</p>
+        <p>
+            Card Type<sup>*</sup>
+            <select name="Card" id="card">
+                <option value="">--Select Card Type--</option>
+                <option value="Visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Credit card">Credit card</option>
+            </select>
+        </p>
+        <P>
+        Card Number<sup>*</sup>
+        <input type="number" name="Card_number" id="Card_number" required placeholder="e.g-1111 2222 3333 4444">
+    </p> 
+        <p>
+            CVV* 
+            <input type="password" name="CVV" id="CVV" required placeholder="e.g-123">
+        
+        </p>
+        <p>
+            <input type="submit" value="Pay Now" id="submit"  >
+        </p>
+       
+    
+    </form>
+    </div>
+    
+</body>
+</html>

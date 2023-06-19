@@ -1,0 +1,46 @@
+
+.payment-form {
+    border: 2px solid grey;
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 4px;
+    width: 480px;
+    margin: 0 auto;
+    font-family:'Inconsolata','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+   
+    background-image: radial-gradient(circle,rgba(255, 254, 254, 0.639),rgb(220, 219, 219));
+}
+fieldset {
+    width: 70%;
+    border: 1px solid rgba(128, 128, 128, 0.795);
+    border-radius: 4px;
+    background-color: rgb(225, 237, 248);
+}
+.payment-form textarea,
+.payment-form input[type="text"],
+.payment-form input[type="number"],
+.payment-form input[type="email"] ,
+.payment-form input[type="password"]
+{
+width:60%;
+padding:8px;
+border: 1px solid rgba(128, 128, 128, 0.795);
+border-radius:2px;
+}
+.payment-form .Heading {
+    text-align:center;
+}
+.payment-form input[type="submit"] ,
+.payment-form select {
+    border: 1px solid rgba(128, 128, 128, 0.795) ;
+    border-radius: 3px;
+    padding:10px;
+}
+.payment-form input[type="submit"]{
+    width:20%;
+    background-color: rgb(219, 234, 248);
+    margin:0 0 0 100px;
+    font-weight:750x;
+}

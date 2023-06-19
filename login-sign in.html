@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <title>Online Shopping site in India</title>
+    <link rel="stylesheet" href="css/main_website.css">
+    <link rel="stylesheet" href="css/section.css">
+<link rel="stylesheet" href="css/dropdown.css">
+<link rel="stylesheet" href="css/sign-in&other.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#navbar-parent").load("navbar.html");
+  });
+
+
+</script>
+
+  <style>
+    .navbar {
+      position: sticky;
+      top: 0.1px;
+    } 
+    .outside-container {
+      width: 380px;
+      margin: 0 auto;
+      /* padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      background: rgba(250, 166, 9, 0.116); */
+    }
+    .login-container {
+      width: 380px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      background: rgba(250, 166, 9, 0.116);
+    }
+
+    .login-container label,
+    .login-container input[type="text"],
+    .login-container input[type="password"],
+    .login-container button {
+      display: block;
+      width: 280px;
+      padding: 10px;
+      margin-bottom: 10px;
+     
+    }
+
+    .login-container button {
+      background-color: #6fd173;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 300px;
+    }
+    .login-container button:hover {
+      background-color: #53cd57;
+      color: yellow;
+      text-decoration: underline;
+      /* font-size: 100%; */
+      
+    }
+
+    .login-container .error {
+      color: red;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+    p.new-user{
+      font-size: 90%;
+     color: rgba(0, 0, 0, 0.47);
+    }
+    p.new-user::before ,p.new-user::after{
+      content: ".";
+     display:inline-block;
+      width: 110px;
+      font-size: 0.5px;
+      background-color: gray;
+
+    }
+    div.new-user {
+      background:white;
+      border-radius: 4px;
+      border: 1px solid rgb(228, 228, 228);
+      text-align: center;
+      padding:7px;
+  
+    }
+    div.new-user a{
+      color: rgba(0, 0, 0, 0.8);
+      text-decoration: none;
+    }
+    div.new-user a:hover{
+      color: black;
+      text-decoration: underline;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="navbar" id="navbar-parent"></div>
+
+  <div class="outside-container">
+  <div class="login-container">
+    <h2>Sign-In to your Amazon account</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter your username" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password" required>
+    <button id="signInBtn">Sign In</button>
+    <div class="error" id="errorContainer"></div>
+  </div>
+
+<p class="new-user">New to Amazon?</p>
+  <div class="new-user"> <a href="sign-in.html">Create your Amazon account</a></div>
+</div>
+<script>
+// Adding some data for reference or as an example
+const users = [
+  { username: 'kashish', password: 'KASHISH' },
+  { username: 'abc', password: 'ABC' },
+  { username: 'qwe', password: 'QWE' }
+];
+
+$(document).ready(function() {
+  $("#signInBtn").click(function() {
+    var username = $("#username").val();
+    var password = $("#password").val();
+
+    $("#errorContainer").text("");
+
+    if (username === "" || password === "") {
+      $("#errorContainer").text("Please fill in all fields");
+      return;
+    }
+// adding a logic for sign-in
+    var foundUser = users.find(function(user) {
+      return user.username === username && user.password === password;
+    });
+
+    if (foundUser) {
+      alert("Successfully signed in , Redirecting to main page");
+      
+      window.location.href = "main  _website.html";
+    } else {
+       
+      $("#errorContainer").text("Invalid username or password");
+    }
+  });
+});
+  </script>
+</body>
+</html>

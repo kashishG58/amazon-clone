@@ -1,0 +1,47 @@
+.main {
+    display:flex;
+    flex-flow: row nowrap ;
+    opacity: 1 !important;
+    
+}
+.main-section {
+    background-color: rgba(250, 247, 247, 0.532);
+    z-index: 9;
+    width: 1250px;
+}
+.photo1{
+    margin:-150px 13px 200px 13px;
+    display:flex;
+    width:30%;
+    height:400px ;
+  flex-flow:column nowrap;
+  font-size:100%;   
+    border:2px solid whitesmoke;
+    border-radius:2px;
+    box-shadow:4px 4px 4px 4px rgba(56, 158, 242, 0.116);
+    font-weight:530;
+    background-color: rgba(255, 255, 255);
+    z-index:9;
+    
+}
+/* #button1 {
+    width:69%;
+   margin:13px 0px 0px 30px;
+    text-align:center;
+    border:1px solid grey;
+    background-color: grey;
+    color:white;
+    display:inline-block;
+    padding:6px;
+    border-radius: 2px;
+
+} */
+#photo2 img, #photo3 img {
+    display: inline-block;  
+    margin:0px 0px 11px 4px;
+    width:47%;
+}
+a {
+    text-decoration: none;
+}
+/* ====ADDS===== */

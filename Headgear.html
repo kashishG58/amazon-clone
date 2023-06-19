@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redgear</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <link rel="stylesheet" href="css/main_website.css">
+    <link rel="stylesheet" href="css/section.css">
+<link rel="stylesheet" href="css/dropdown.css">
+<link rel="stylesheet" href="css/sign-in&other.css">
+
+<!-- FOr nav bar repition -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#navbar-parent").load("navbar.html");
+  });
+</script>
+    <style>
+    .navbar {
+      position: sticky;
+      top: 0.1px;
+    }      
+        #table1,
+        #table1 tr,
+        #table1 td {
+    border : 1px solid black;
+    border-collapse: collapse;/*Seperate ke saath alag alag cell dikhta hai , but collapse ke saath spacing nhi aati*/
+    padding:6px;
+    border-spacing: 3px;
+}
+caption {
+    text-align: left;
+}
+#table1 td:first-of-type{
+    background-color: rgba(202, 202, 202, 0.719);
+}
+        .main{
+            display: grid;
+           grid-template-columns:300px 900px; 
+            grid-auto-rows: 620px;
+            row-gap: 8px;
+            column-gap: 7px;    
+            
+        }
+        .id1 {
+            background-color: transparent;
+            padding: 15px;
+        
+        }
+        #img ,#offer{
+            border:1px solid rgba(128, 128, 128, 0.676);
+        }
+        #img img {
+            width: 280px;
+            height: auto;
+        }
+        #second{
+            display: grid;
+            grid-template-rows: 100px 400px 150px;
+            row-gap: 5px;
+            
+        }
+        #sub-box{
+            display: grid;
+            grid-template-columns: 710px 230px;
+            column-gap: 10px;
+        }
+        .disc {
+            font-size: 150%;
+            color: red;
+        }
+        .rate {
+            font-size: 200%;
+        }
+        .mrp {
+            text-decoration: line-through;
+        }
+        #sub-box p {
+            font-size: 90%;
+            opacity: 0.8;
+        }
+        #add-to-Cart {
+          width: 180px;
+          height: 35px;
+          float: right;
+          border: 1px solid black;
+          /* font-weight: bold; */
+          background-color: rgb(255, 182, 46);
+          border-radius: 50px;
+          cursor: pointer;
+        }
+        #add-to-Cart:hover {
+          font-size: 105%;
+          color: red;
+   
+        }
+        
+            </style>
+        
+</head>
+    
+        <body>
+          <div class="navbar" id="navbar-parent"></div>
+        <main>
+            <div class="main">
+            <div id="img" class="id1">
+              <p>  <img src="/images/products/redgear.jpg" alt="headgears"></p>
+              <p>
+                <table id="table1">
+                    <caption>Technical details</caption>
+                    <tr><td>Brand
+                    </td>
+                    <td>
+                        Redgear
+                    </td>
+                    </tr>
+                    <tr><td>Manufacturer
+                    </td>
+                    <td>
+                        Imaginne marketing
+                    </td>
+                    </tr>
+                    <tr><td>Model
+                    </td>
+                    <td>
+                        Cloak
+                    </td>
+                    </tr>
+                    <tr><td>Model Name
+                    </td>
+                    <td>
+                        Cloak Wired
+                    </td>
+                    </tr>
+                    <tr><td>Special Feature
+                    </td>
+                    <td>
+                        Microphone Included
+                    </td>
+                    </tr>
+                    <tr><td>Country of Origin
+                    </td>
+                    <td>
+                        China
+                    </td>
+                    </tr>
+                </table>
+              </p>
+            </div>
+        <div id="second">
+            <div class="id1"><h2>Redgear Cloak Wired RGB Wired Over Ear Gaming Headphones with Mic for PC</h2></div>
+          <div id="sub-box">
+             <div class="id1">
+              <hr>
+              <button onclick="addToCart('Redgear Cloak Wired RGB Wired Over Ear Gaming Headphones with Mic for PC', 990.00,'images/products/redgear.jpg')" id="add-to-Cart">Add to Cart</button>
+              <span class="disc">-44%</span> &nbsp;<sup>&#8377;</sup><span class="rate">990</span>
+            <p>M.R.P.:&#8377;<span class="mrp">1,799</span></p>Inclusive of all taxes <hr>
+            <strong><caption>About this item:</caption></strong>
+            <ul>
+                <li>Sound Quality: Redgear Cloak comes equipped with 50mm Driver with Enhanced audio bass and clarity which dramatically improves your in-game sound experience. Inline Remote : No</li>
+                <li>Microphone: It comes equipped with a Omni-directional microphone which can be used as per you gaming situations. You can just put it up if it is not in use.</li>
+                <li>Build Quality: It's luxurious noise-isolating memory foam ear pads and adjustable split headband reduces pressure and provides optimal comfort for long gaming sessions</li>
+                <li>Other Features: This headset has an amazing RGB LED light effect on ear-ups and tip of the microphone. It also comes equipped with volume control, so just scroll up or down to adjust it.</li>
+            </ul>
+         
+<hr>
+<span style="font-size: larger;font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Customer reviews </span><br>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span> &nbsp;<strong>4 out of 5</strong><br>
+<p>14,890 global ratings</p>
+<hr style="border: 2px solid rgba(189, 187, 187, 0.82);">
+<div class="row">
+    <div class="side">
+      <div>5-star</div>
+    </div>
+    <div class="middle">
+      <div class="bar-container">
+        <div class="bar-5"></div>
+      </div>
+    </div>
+    <div class="side right">
+      <div>50%</div>
+    </div>
+    <div class="side">
+      <div>4-star</div>
+    </div>
+    <div class="middle">
+      <div class="bar-container">
+        <div class="bar-4"></div>
+      </div>
+    </div>
+    <div class="side right">
+      <div>23%</div>
+    </div>
+    <div class="side">
+      <div>3-star</div>
+    </div>
+    <div class="middle">
+      <div class="bar-container">
+        <div class="bar-3"></div>
+      </div>
+    </div>
+    <div class="side right">
+      <div>12%</div>
+    </div>
+    <div class="side">
+      <div>2-star</div>
+    </div>
+    <div class="middle">
+      <div class="bar-container">
+        <div class="bar-2"></div>
+      </div>
+    </div>
+    <div class="side right">
+      <div>9.3%</div>
+    </div>
+    <div class="side">
+      <div>1-star</div>
+    </div>
+    <div class="middle">
+      <div class="bar-container">
+        <div class="bar-1"></div>
+      </div>
+    </div>
+    <div class="side right">
+      <div>2.5%</div>
+    </div>
+  </div>
+
+ </div>
+            <div class="id1" id="offer"><img src="/images/products/discount (2).png" alt="offers"><sup>&nbsp;&nbsp;Offers</sup>
+                <section id="OfferS">
+                    <div class="offerS">
+                       <strong> No Cost EMI </strong><br><br>
+                        Avail No Cost EMI on select cards for orders above ₹3000 <br>
+                        <a href="#"><strong>1 Offer </strong>&gt;</a>
+                    </div>
+                    <br>
+                <!--space-->
+                    <div class="offerS"  >
+                      <strong>  Bank Offer </strong><br>
+                        Upto ₹1,750.00 discount on select Credit Cards, HDFC Bank Debit Cards... <br>
+                        <a href="#">5 Offers &gt;</a>
+                    </div>
+                    <!--space-->
+                </section><br><hr style="border: 1px solid rgba(48, 47, 67, 0.671);">
+                <strong><caption>By features</caption></strong>
+                <table id="table2">
+                    <tr><td>Comfort</td>
+                    <td>
+                        <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>3.9
+                    </td>
+                </tr>
+                    <tr><td>For gaming</td>
+                    <td>
+                        <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>3.8
+                    </td>
+                </tr>
+                    <tr><td>Sound quality</td>
+                    <td>
+                        <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>3.7
+                    </td>
+                </tr>
+                    <tr><td>Volume control</td>
+                    <td>
+                        <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-full checked"></span>
+<span class="fa fa-star"></span>3.5
+                    </td>
+                </tr>
+                    <tr><td>Noise cancellation</td>
+                    <td>
+                        <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-full checked"></span>
+<span class="fa fa-star"></span>3.3
+                    </td>
+                </tr>
+
+                </table>
+        </div>
+       
+            <div class="reviews"> <hr style="border: 2px solid rgba(159, 158, 158, 0.578);">
+                <h4>Top reviews from India</h4>
+                <img src="/images/products/User-Profile-Icon-9mces.png" class="user-img" alt="user" width="35px" height="35px"> <h3 class="h3">Kashish Goyal</h3>   <br>
+                <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star-half-full"></span> <strong>Exceptional Gaming Experience in pocket friendly, budget friendly over ear Headphone</strong> <br>
+             <span class="opacity">Reviewed in India 🇮🇳 on 7 May 2023 <br>
+                Pattern Name: Gaming Headphone</span> <b>|</b> <strong style="color: orange; font-size: 80%;">Verified Purchase</strong>
+                <p style="opacity: 1; font-family: Arial, Helvetica, sans-serif; font-size: 100%;">I recently purchased the Redgear Cloak Wired RGB Gaming Headphones, and they have exceeded my expectations. The design is sleek with eye-catching RGB lighting, and the over-ear comfort allows for long gaming sessions without discomfort. The audio performance is immersive, delivering powerful sound with deep bass and clear highs.</p>
+
+            </div>
+            
+</div>
+</main>
+
+<script>
+  function addToCart(productName, price, imageUrl) {
+    var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+    var product = {
+      name: productName,
+      price: price,
+      imageUrl: imageUrl
+    };
+
+    cartItems.push(product);
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+   
+  }
+</script>
+</body>
+</html>

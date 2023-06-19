@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    
+}
+nav {
+    z-index:9 ;
+}
+
+.container{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin:30px 400px;
+    font-size:14px;
+    padding:9px;
+    
+}
+.container {
+    opacity: 0.9 !important;
+    background-color: rgb(224, 223, 223);
+    padding:8px 20px 10px 20px;
+    border:2px solid lightgray;
+    border-radius: 5px;
+    
+}
+.sign-form input[type="text"],
+.sign-form input[type="email"],
+.sign-form input[type="number"],
+.sign-form input[type="password"],
+.sign-form input[type="date"],
+.sign-form select,
+.sign-form textarea {
+    width:100%;
+    padding:8px;
+    border:1px solid rgb(240, 238, 238);
+    border-radius:5px;
+    margin: 7px;
+}
+
+.main_heading {
+    text-align:center;
+
+}
+.sign-form input[type="submit"] {
+    background-color:rgba(110, 212, 252, 0.856);
+    color:blue;
+    padding:8px 15px;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    width: 50%;
+    
+}
+.sign-form input[type="submit"]:hover {
+    background-color:rgb(192, 191, 190)
+
+}

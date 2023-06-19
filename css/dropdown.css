@@ -1,0 +1,84 @@
+
+.category a {
+font-size:15px;
+text-decoration: none;
+color: black;
+display: inline-block;
+padding:5px;
+}
+.category  ul { 
+display: inline;
+margin:0;
+padding:0;
+
+}
+.category ul li {
+display:inline-block;
+color: black;
+
+}
+.category:hover{
+background: rgb(204, 203, 203);
+border:2px solid rgb(255, 160, 8);
+
+}
+    .category ul li:hover ul {
+    display: block;
+    
+    }
+.category ul li ul{
+position: absolute;
+width:120px;
+display: none;
+}
+
+.category ul li ul li {
+
+display: block;
+}
+.category ul li ul li a {
+display: block !important;
+}
+.category ul li ul li:hover , .category ul li ul li a:hover{
+background: rgba(128, 128, 128, 0.533);
+border-radius: 2.5px;
+color: white;
+font-weight: bold;
+
+}
+.category ul li:hover .list{
+    width: 180px;
+    height: 180px;
+    overflow:auto;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    left: -10px;
+    top: 10px;
+    
+}
+/* ----------=====language----====== */
+.lang{
+   width: 80px;
+    height: 45px;
+    margin: -8px 20px 0px 0px;
+    padding: 15px 0 0 0 ;
+    box-sizing: border-box;
+
+
+}
+
+.lang select {
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-weight: bolder;
+    width: 40px;
+}
+.lang:hover{
+    border: 1px solid white;
+}
+.lang option{
+  
+    color:black;
+}

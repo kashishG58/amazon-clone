@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/main_website.css">
+    <link rel="stylesheet" href="css/section.css">
+<link rel="stylesheet" href="css/dropdown.css">
+<link rel="stylesheet" href="css/sign-in&other.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#navbar-parent").load("navbar.html");
+  });
+</script>
+<style>
+    .navbar {
+      position: sticky;
+      top: 0.1px;
+    } 
+</style>
+</head>
+<body>
+   <div class="navbar" id="navbar-parent"></div>
+    <div class="container">
+        <form action="main_website.html" method="get" class="sign-form">
+    <h3 class="main_heading"> Enter your details to Sign-up</h3>
+    <hr>
+    <h5>Contact Information</h5>
+    <p>* marked field are Mandatory</p>
+    <p><label>Name:* </label>
+    <input type="text" name="name" required placeholder="Your Name"></p>
+    
+    <p>Email* <br>
+        <input type="email" name="email" id="email" required placeholder="example@abc.com">
+    </p>
+    <p>
+        Mobile<br><input type="tel"name="phone" id="phone" placeholder="99xxx-xxxxx" pattern="[0-9]{5}-[0-9]{5}">
+    </p>
+    <p>
+       Password: <input type="password" name="password" required>
+    </p>
+    
+    <input type="submit" value="sign-up">
+        </form>
+        <p style="color: rgba(0, 0, 0, 0.8); font-size: small;">Login instead?</p>
+    </div>
+    <br><br><br><br>
+    <footer>
+        <div class="policy">
+        &#9900;<a href="#">FAQ</a>  <br>&#9900;
+        <a href="#">Contact us
+            </a> <br>&#9900;
+            <a href="#">Terms of use</a> <br>&nbsp;&nbsp;
+            <a href="#">Privacy Policy</a>&nbsp;&nbsp; |
+            <a href="#">Refund Policy</a>&nbsp;&nbsp;|
+            <a href="#">&copy;2023 kashish goyal</a>&nbsp;&nbsp;
+        </div>
+        <div class="connect">
+        <strong>Connect with US</strong>
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+        </footer>
+</body>
+</html>

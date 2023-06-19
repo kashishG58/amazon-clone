@@ -1,0 +1,188 @@
+
+
+*:target {
+    background-color: yellow;
+}
+body {
+    /* background-color: rgb(218, 217, 217); */
+    background-image: radial-gradient(circle,rgb(255, 254, 254),rgba(120, 120, 120, 0.763));
+}
+.navbar {
+    position: sticky;
+    top: 0.1px;
+    z-index: 10;
+}
+nav {
+    background-color: rgb(22, 22, 27);
+    margin:0 ;
+    position: sticky;
+    top: 0.1px;
+  display: flex;
+    height: 60px;
+    z-index: 10;
+    width: 1248px;
+   
+}
+/*====For banner representation=====*/
+#banner img{
+    width: 1248px; 
+    height: 480px;
+    display: block;
+   
+}
+.slide::before{
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 1256px;
+    height: 490px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 41%;
+  width: auto;
+  padding: 14px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right: 6.1px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.532);
+}
+ /*====For banner representation ends=====*/
+
+.logo {
+    width: 110px;
+    float: left;
+    padding:1px;
+    margin: -5px 10px 5px -15px;
+}
+.logo img {
+    float: left;
+    width:100px;
+    height: 40px;
+    margin: 0px 27px 0px 0px;
+}
+.loc_box {
+    width: 160px;
+    margin: -8px 20px 0px -10px;
+    height: 45px;
+    padding:1px;
+    /* box-sizing: border-box; */
+}
+.loc_box::first-line {
+    font-size: 80%;
+    color: rgba(225, 223, 223, 0.879);
+}
+nav ul {
+    
+    color: white;
+    list-style: none;
+    
+}
+nav ul li{
+    float: left;
+    display:flex;
+    color: white;
+    list-style: none;
+    
+}
+.location {
+    filter: invert(100%);
+
+}
+.loc_box:hover , .logo:hover{
+        border:1px solid white;
+    
+        
+}
+/* =====search box==== */
+nav a {
+    text-decoration: none;
+    color:white;
+}
+.search-bar{
+    display: flex;
+    margin: -8px 20px 0px 0px;
+}
+nav input[type=text] {
+justify-content: center;
+border: none;
+/* border-radius: 2px; */
+font-size: 15px;
+width: 390px;
+height: 36px;
+}
+ .button-search {
+    width: 35px;
+    height: 38px;
+    background-color: rgb(255, 193, 8);
+    color: black;
+    box-sizing: border-box;
+    font-weight: bolder;
+    padding: 6px 2px 2px 9px;
+    border-radius: 0 2px 2px 0;
+}
+.category {
+background-color: rgb(225, 225, 225);
+color: rgba(2, 2, 2, 0.884);
+width: 48px;
+height: 38px;
+font-size: 88%;
+padding: 8px 2px 2px 8px;
+box-sizing: border-box;
+border-radius: 2px 0 0 2px;
+}
+
+
+/* ----------=====shopping cart----====== */
+.shop-cart {
+    margin: -8px 20px 0px 0px;
+    color: white;
+    padding: 2px;
+}
+.shop-cart:hover{
+    border: 1px solid white;
+}
+
+/* ----------=====footer ----====== */
+footer {
+    height: 100px;
+    background-color: black;
+    margin: 5px;
+    display: flex;
+    padding: 5px;
+    
+}
+footer a , footer div{
+    color: white;
+    
+}
+footer ul {
+    list-style: none;
+}
+footer ul a{
+    text-decoration: none;
+}
+footer ul a:hover{
+    color:yellow;
+    text-decoration: underline solid blue;
+}
